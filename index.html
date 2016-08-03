@@ -1,8 +1,117 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/content-filter.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/lib/jquery-3.1.0.min.js"></script>
+    <script src="js/content-filter.js"></script>
+</head>
+
 <body>
-    Hello world, my name is Herman Marchuk.
+    <div class="container">
+        <header class="header clearfix">
+            <div class="logo hvr-float">
+                <p>Herman Marchuk</p>
+            </div>
+            <article class="about-me">
+                <p>
+                    <span class="firstcharacter">H</span>ere presented some of my practical works which has been done during my studying and growing as a front-end developer. I'll appreciate any comments to code and feel free to contact me.
+                </p>
+            </article>
+        </header>
+        <div class="widget-container"></div>
+        <footer>
+            <div class="footer-content clearfix">
+                <div class="copyright">
+                    <i class="fa fa-copyright"></i>
+                    2016 Herman Marchuk
+                    </div>
+                <div class="links">
+          <a href="https://github.com/hermanmarchuk">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://ua.linkedin.com">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+    $(function() {
+        var $container = $('.widget-container');
+        var data = [{
+            name: 'This portfolio',
+            imgSrc: 'img/this-portfolio.png',
+            tags: ['Pure HTML/CSS', 'jQuery'],
+            description: 'test',
+            demoUrl: 'http://hermanmarchuk.github.io',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io'
+        }, {
+            name: 'Form Validation',
+            imgSrc: 'img/form-validation.png',
+            tags: ['AJAX', 'Bootstrap', 'Pure JS', 'Node.js'],
+            description: 'Form validation using as registration form example. Field "email" has server side validation.',
+            demoUrl: 'www...demoUrl',
+            codeUrl: 'www...codeUrl'
+        }, {
+            name: 'Timer',
+            imgSrc: 'img/timer.png',
+            tags: ['Pure JS', 'Bootstrap'],
+            description: 'Several timers can be inserted on one page: code has bulid on prototypes.',
+            demoUrl: 'https://hermanmarchuk.github.io/works/timer/',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io/tree/master/works/timer'
+        }, {
+            name: 'Zoomer',
+            imgSrc: 'img/zoomer.png',
+            tags: ['jQuery', 'Pure HTML/CSS'],
+            description: 'Fully adaptive zoomable image (fit all screens). Code is reusable.',
+            demoUrl: 'http://hermanmarchuk.github.io/works/zoomable/',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io/tree/master/works/zoomable'
+        }, {
+            name: 'Slider',
+            imgSrc: 'img/slider.png',
+            tags: ['jQuery', 'Pure HTML/CSS'],
+            description: 'Can be reusable (several sliders on one page). Slide fit all the screens.',
+            demoUrl: 'http://hermanmarchuk.github.io/works/slider/',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io/tree/master/works/slider'
+        }, {
+            name: 'Tag list',
+            imgSrc: 'img/tag-list.png',
+            tags: ['jQuery', 'Bootstrap'],
+            description: 'Test',
+            demoUrl: 'http://hermanmarchuk.github.io/works/tag-list/',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io/tree/master/works/tag-list'
+        }, {
+            name: 'Pet Medicine',
+            imgSrc: 'img/pet-medicine.png',
+            tags: ['Bootstrap'],
+            description: 'This project has been developed during my studying in Bootstrap-course by Lynda.com',
+            demoUrl: 'http://hermanmarchuk.github.io/works/pet-medicine/',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io/tree/master/works/pet-medicine'
+        }, {
+            name: 'Bike Shop',
+            imgSrc: 'img/bike-shop.png',
+            tags: ['Pure HTML/CSS'],
+            description: 'test',
+            demoUrl: 'http://hermanmarchuk.github.io/works/bike-shop/',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io/tree/master/works/bike-shop'
+        }, {
+            name: '3D Animation',
+            imgSrc: 'img/3d-animation.png',
+            tags: ['Pure HTML/CSS'],
+            description: 'test',
+            demoUrl: 'http://hermanmarchuk.github.io/works/3d-animation/',
+            codeUrl: 'https://github.com/hermanmarchuk/hermanmarchuk.github.io/tree/master/works/3d-animation'
+        }];
+        var widget = new ContentFilter($container, data);
+    });
+    </script>
 </body>
 
 </html>
