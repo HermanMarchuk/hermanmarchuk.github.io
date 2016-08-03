@@ -1,0 +1,165 @@
+.widget-wrapper {
+    overflow: hidden;
+    text-align: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    float: left;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #222222;
+    padding: 0.5%;
+    margin: 0.5%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.tile {
+    float: left;
+    transition: all 0.5s;
+    margin: 0.5%;
+    padding: 0.5%;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.separator {
+    display: block;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+}
+
+input[type="radio"][id="all"]:checked ~ .item {
+    display: block;
+}
+
+input[type="radio"]:checked + label {
+    background: yellow;
+}
+
+.image-wrapper img {
+    max-width: 98.5%;
+    width: 98.5%;
+    border-radius: 8px;
+    border: 1px solid #DCDCDC;
+    height: 12em;
+}
+
+.item-tags,
+.item-title {
+    padding: 0;
+    margin: 0.5%;
+    width: 100%;
+}
+
+.item-title h3 {
+    margin: 0;
+}
+
+.item-tags li {
+    display: inline-block;
+}
+
+.item-tags li:first-child:before {
+    padding-right: 50px;
+}
+
+.main-info {
+    height: 50px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper .extra-info {
+    visibility: hidden;
+    position: absolute;
+    /*    width: 100%;
+    height: 100%;
+    top: 0;*/
+    width: 98.5%;
+    height: 99%;
+    top: 0;
+    left: 3px;
+}
+
+.image-wrapper:hover .extra-info {
+    transition: all 0.4s;
+    visibility: visible;
+    background-color: rgba(201, 201, 201, 0.7);
+    border-radius: 8px;
+}
+
+.extra-info a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1% 4%;
+    margin-left: 3%;
+    background: none repeat scroll 0% 0% #212121;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.extra-info-button:hover {
+    background: #FFF67A;
+    color: #666;
+}
+
+.extra-info p {
+    font-size: 0.8em;
+    padding: 5% 5% 1% 5%;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+@media (min-device-width: 992px) {
+    .tile {
+        width: 31.3%;
+    }
+    label {
+        width: 31.3%;
+    }
+    .extra-info p {
+        margin-top: 6%;
+    }
+}
+
+@media (min-device-width: 768px) and (max-device-width: 992px) {
+    .tile {
+        width: 48%;
+    }
+    label {
+        width: 48%;
+    }
+    .extra-info p {
+        margin-top: 12%;
+    }
+}
+
+@media (max-device-width: 768px) {
+    .tile {
+        width: 96%;
+        padding: 2.5%;
+    }
+    label {
+        width: 96%;
+        padding: 2.5%;
+    }
+    .extra-info p {
+        margin-top: 20%;
+    }
+    .image-wrapper img {
+        height: 25em;
+    }
+}

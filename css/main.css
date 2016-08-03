@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Verdana;
+    background: #FAFAFA;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+  margin-top: 15px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0.5%;
+}
+.header .logo {
+  display: inline-block;
+  line-height: 70px;
+  vertical-align: middle;
+  float: left;
+  font-family: 'Kaushan Script', cursive;
+  color: #181818;
+  font-size: 1.9em;
+  cursor: pointer;
+}
+.header .logo p {
+  display: inline;
+}
+.header .about-me {
+  float: right;
+  display: inline;
+  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+  font-size: 0.9em;
+  max-width: 50%;
+}
+.header .about-me .firstcharacter {
+  float: left;
+  font-size: 33px;
+  line-height: 30px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 5px;
+  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+footer .footer-content .copyright {
+  float: left;
+  font-size: 0.7em;
+  line-height: 40px;
+  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+}
+footer .footer-content .links a {
+  float: right;
+  text-decoration: none;
+  margin: 0% 0% 1% 1%;
+  font-size: 1.7em;
+  color: #666666;
+}
+footer .footer-content .links a:hover {
+  color: #e3d94c;
+}
+
+
+@media (max-device-width: 768px) {
+	.header .logo{
+		width: 100%;
+		text-align: center;
+	}
+	.header .about-me {
+    width: 100%;
+    float: none;
+	}
+}
