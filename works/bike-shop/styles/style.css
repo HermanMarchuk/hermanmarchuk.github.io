@@ -1,0 +1,584 @@
+
+@font-face {
+    font-family: Doppio;
+    src: url("../fonts/DoppioOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url("../fonts/bebas_neue_regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../img/bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.page-wrapper {
+    position: relative;
+    width: 960px;
+    margin: 20px auto;
+}
+
+/* navbar section */
+
+.navbar-wrapper {
+    position: relative;
+    background: #181818;
+    height: 58px;
+/*    overflow: hidden;*/
+}
+
+.logo, .navbar {
+    display: inline-block;
+}
+
+.logo {
+    width: 116px;
+    height: 58px;
+}
+
+.logo img {
+    width: 100%;
+}
+.navbar {
+    position: absolute;
+    font-family: Doppio;
+    font-variant: small-caps;
+    margin-top: 15px;
+    margin-right: 15px;
+    position: relative;
+    float: right;
+    font-weight: 400;
+    height: 58px;
+    width: 844px;
+    top: -90px;  
+}
+
+.navbar:after {
+    clear: both;
+}
+
+.navbar ul li:hover {
+    background: rgba(121, 110, 96, 0.78);
+    border-radius: 8px;
+    height: 80px;
+}
+
+.navbar-li-bikes {
+    background: rgba(121, 110, 96, 0.78);
+    border-radius: 8px;
+}
+
+.slider {
+    position: absolute;
+    height: 559px;
+    width: 960px;    
+}
+
+.slider-text {
+    position: absolute;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    font-family: Bebas;
+    width: 450px;
+    left: 270px;
+    top: 150px;
+    
+}
+
+.slider-span-3 {
+    position: absolute;
+    top: 140px;
+    left: 0px;
+    font-size: 72px;
+}
+
+.slider-pictures {
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+}
+
+.slider-pictures ul li {
+    display: inline-block;
+    border: 4px solid;
+    color: white;
+    
+}
+
+.slider-pictures ul li:hover {
+    color: #a37712;
+    transition: 1s;
+}
+
+.bestseller {
+    position: absolute;
+    height: 559px;
+    width: 960px;
+    background-color: white;
+    top: 617px;
+    overflow: hidden;
+}
+
+.bestseller-main-offer {
+    position: absolute;
+    height: 120px;
+    width: 960px;
+}
+
+.bestseller-main-offer-1 {
+    position: absolute;
+    height: 279.5px;
+    width: 480px;
+    background-color: white;
+}
+
+.bestseller-main-offer-1-image {
+    position: absolute;
+    height: 236px;
+    width: 387px;
+    background: url(../img/contentBike1.jpg);
+    left: 46.5px;
+    top: 21.75px;
+}
+
+.bestseller-main-offer-1-line {
+    position: relative;
+    height: 30px;
+    width: 200px;
+    background-color: #446720;
+    color: white;
+    font-family: Doppio;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    font-variant: small-caps;
+    transform: rotate(315deg);
+    top: 30px;
+    left: -50px;    
+}
+
+.bestseller-main-offer-1-triangle {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #E6DDDA;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    right: 0;
+    transform: rotate(270deg);
+}
+
+.bestseller-main-offer-2 {
+    position: absolute;
+    height: 279.5px;
+    width: 480px;
+    left: 480px;;
+    background-color: #E6DDDA;
+    z-index: 1;
+}
+
+.bestseller-main-offer-2-text {
+    position: absolute;
+    height: 279.5px;
+    width: 240px;
+    z-index: 1;
+}
+
+.bs-bicycle-name {
+    position: absolute;
+    width: 230px;
+    font-family: Doppio;
+    top: 30px;
+    left: 30px;
+}
+
+.bs-bicycle-name-author-1 {
+    font-weight: 300;
+}
+
+.bs-bicycle-name-author-2 {
+    color: #987F77;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.bs-bicycle-price {
+    font-family: Bebas;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    font-size: 40px;
+}
+
+.bs-add-button {
+    display: block;
+    font-family: Bebas;
+    position: absolute;
+    width: 230px;
+    height: 40px;
+    border: 3px solid;
+    top: 185px;
+    left: 30px;
+    color: #987F77;
+    text-align: center;
+}
+
+.bs-add-button:hover {
+    background: #71534a;
+    color: white;
+    transition: background 1s;
+}
+.bs-add-button-text {
+    position: absolute;
+    top: 10px;
+    left: 68px;
+}
+
+.bs-ask-button {
+    position: absolute;
+    font-family: Doppio;
+    bottom: 15px;
+    left: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+.bestseller-main-offer-2-sale {
+    position: absolute;
+    font-family: Bebas;
+    font-weight: 600;
+    right: 0;
+    top: -40px;
+    font-size: 200px;
+    z-index: 0;
+    color: rgba(121, 110, 96, 0.18)
+}
+
+.bestseller-second-offers {
+    position: absolute;
+    height: 279.5px;
+    width: 960px;
+    bottom: 0;
+}
+
+.offer-1 {
+    position: absolute;
+    width: 250px;
+    height: 279.5px;
+    left: 52.5px;
+}
+
+.bs-so-image-1 {
+    position: absolute;
+    top: 20px;
+    background: url(../img/sprites/sprite-bikes.png) no-repeat;
+    background-position: 0px 10px;
+    width: 230px;
+    height: 150px;
+}
+
+.bs-so-name {
+    font-family: Doppio;
+    position: absolute;
+    left: 5px;
+    top: 170px;
+}
+
+.bs-so-name-author-1 {
+    font-size: 15px;
+}
+
+.bs-so-name-author-2 {
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.bs-so-price {
+    position: absolute;
+    font-family: Bebas;
+    right: 5px;
+    top: 165px;
+    font-size: 30px;
+}
+
+.bs-so-button {
+    display: block;
+    font-family: Bebas;
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    border: 3px solid;
+    bottom: 10px;
+    left: 30px;
+    color: #987F77;
+    text-align: center;
+}
+
+.bs-so-button:hover {
+    background: #71534a;
+    color: white;
+    transition: 1s;
+}
+.bs-so-button-text {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.offer-2 {
+    position: absolute;
+    width: 250px;
+    height: 279.5px;
+    left: 355px;
+}
+
+.bs-so-image-2 {
+    position: absolute;
+    top: 20px;
+    background: url(../img/sprites/sprite-bikes.png) no-repeat;
+    background-position: -247px 0px;
+    width: 230px;
+    height: 150px;
+}
+
+.offer-3 {
+    position: absolute;
+    width: 250px;
+    height: 279.5px;
+    right: 52.5px;
+}
+
+.bs-so-image-3 {
+    position: absolute;
+    top: 20px;
+    background: url(../img/sprites/sprite-bikes.png) no-repeat;
+    background-position: 0 -200px;
+    width: 230px;
+    height: 150px;
+}
+
+
+.banner {
+    position: absolute;
+    width: 960px;
+    height: 364px;
+    background: url(../img/botttomBaner/bg.jpg);
+    top: 1178px;
+}
+
+
+.banner-button {
+    font-family: Doppio;
+    font-variant: small-caps;
+    font-size: 30px;
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    border: 4px solid;
+    top: 142px;
+    left: 355px;
+}
+
+.banner-button-text {
+    position: absolute;
+    display: block;
+    left: 37px;
+    top: 14px;
+}
+
+.banner-button:hover {
+    background: #71534a;
+    color: white;
+    transition: background 1s;
+}
+
+.footer {
+    position: absolute;
+    width: 960px;
+    height: 90px;
+    top: 1542px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.footer-menu {
+    position: absolute;
+    font-family: Doppio;
+    font-variant: small-caps;
+    display: inline;
+    font-size: 20px;
+    top: 35px;
+}
+
+ul li.footer-menu:nth-child(1) {
+    left: 150px;
+}
+
+.footer-menu:nth-child(2) {
+    left: 333px;
+}
+
+.footer-menu:nth-child(3) {
+    left: 477px;
+}
+
+.footer-menu:nth-child(4) {
+    left: 576px;
+}
+
+.footer-menu:nth-child(5) {
+    left: 694px;
+}
+
+.footer-menu-link {
+    color: #0093ff;
+}
+
+ul li a {
+    display: block;
+}
+
+.navbar li {
+    display: inline-block;
+    position: absolute;
+    top: 32px;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+    overflow: hidden;
+    transition: height .1s ease-in-out;
+    z-index: 10;
+}
+    
+.navbar li:nth-child(1) {
+    left: 250px;
+}    
+
+.navbar li:nth-child(2) {
+    left: 350px;
+}    
+
+.navbar li:nth-child(3) {
+    left: 450px;
+}  
+
+.navbar li:nth-child(4) {
+    left: 550px;
+}    
+
+.navbar li:nth-child(5) {
+    left: 650px;
+} 
+
+.navbar li:nth-child(6) {
+    left: 750px;
+} 
+
+#fixed:hover {
+    z-index: 10;
+}
+
+.about-payment {
+    position: absolute;
+    width: 960px;
+    height: 30px;
+    top: 1632px;
+    left: 347.5px;
+}
+
+.about-payment ul li {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background: url(../img/sprites/pyment_sprite.png) no-repeat;
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.about-payment ul li:nth-child(1) {
+    background-position: 0 0;
+}
+
+.about-payment ul li:nth-child(2) {
+    background-position: -45px 0px;
+    left: 55px;
+}
+
+
+.about-payment ul li:nth-child(3) {
+    background-position: -92.5px 0px;
+    left: 110px;
+}
+
+.about-payment ul li:nth-child(4) {
+    background-position: -140px 0px;
+    left: 165px;
+}
+
+.about-payment ul li:nth-child(5) {
+    background-position: -187.5px 0px;
+    left: 220px;
+}
+
+.view_port .slider_horisontal {
+    width:400%;
+    height:559px;
+    position:relative;
+    animation:slide 10s infinite alternate;
+}
+
+.view_port {
+    overflow: hidden;
+}
+
+.slider_horisontal .slide {
+    float:left;
+    width:25%;
+    height:100%;
+    background:url(../img/banerBg.jpg);
+}
+
+.slider_horisontal .slide:nth-child(1) {
+    background:url(../img/banerBgBlured.jpg);
+}
+
+.slider_horisontal .slide:nth-child(2) {
+    background:url(../img/banerBgBlured_2.jpg);
+}
+
+.slider_horisontal .slide:nth-child(3) {
+    background:url(../img/banerBgBlured_3.jpg);
+}
+
+@keyframes slide {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -300%; }
+}

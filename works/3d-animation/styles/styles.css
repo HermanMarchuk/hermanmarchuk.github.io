@@ -1,0 +1,68 @@
+.container {
+    width:100vw;
+    height:100vh;
+    perspective: 800px;
+    position: relative;
+}
+
+.carousel {
+    position:absolute;
+    width:200px;
+    height:100px;
+    top:45%;
+    left:45%;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.side {
+    width: 100%;
+    height:100%;
+    position:absolute;
+    border:2px solid #414141;
+}
+
+.side.side1 {
+    background: rgba(0, 255, 39, 0.76);
+    transform:translateZ(300px);
+}
+
+.side.side2 {
+    background: rgba(0, 10, 255, 0.76);
+    transform:rotateY(40deg) translateZ(300px);
+}    
+
+.side.side3 {
+    background: rgba(255, 0, 118, 0.76);
+    transform:rotateY(80deg) translateZ(300px);
+}  
+
+.side.side4 {
+    background: rgba(255, 235, 0, 0.76);
+    transform:rotateY(120deg) translateZ(300px);
+}    
+
+.side.side5 {
+    background: rgba(0, 255, 186, 0.76);
+    transform:rotateY(160deg) translateZ(300px);
+}  
+
+.side.side6 {
+    background: rgba(255, 157, 0, 0.76);
+    transform:rotateY(200deg) translateZ(300px);
+}  
+
+.side.side7 {
+    background: rgba(118, 0, 255, 0.76);
+    transform:rotateY(240deg) translateZ(300px);
+}  
+
+.side.side8 {
+    background: rgba(255, 0, 0, 0.76);
+    transform:rotateY(280deg) translateZ(300px);
+} 
+
+.side.side9 {
+    background: rgba(0, 255, 245, 0.76);
+    transform:rotateY(320deg) translateZ(300px);
+}  

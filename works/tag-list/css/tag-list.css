@@ -1,0 +1,22 @@
+/* this is a custom CSS stylesheet */
+
+body {
+    padding-top: 70px;
+}
+
+.tag-list-container div {
+    padding: 2px;
+}
+
+.tag-wrapper {
+	display: inline-block;
+    margin: 2px;
+}
+
+.tag-close:hover {
+    cursor: pointer;
+}
+.tag-close {
+	padding-left: 2px;
+	color: pink;
+}

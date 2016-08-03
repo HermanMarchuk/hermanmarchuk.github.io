@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>27.1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tag-list.css" rel="stylesheet">
+    <script src="js/lib/jquery-2.2.4.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/respond.js"></script>
+    <script src="js/tag-list.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- javascript -->
+        <script>
+        $(function() {
+            var insertTo = $('.container');
+            var firstTagList = new TagList(insertTo);
+        });
+        </script>
+</body>
+
+</html>

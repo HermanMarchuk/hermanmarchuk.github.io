@@ -1,0 +1,110 @@
+.timer-container {
+    width: 600px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.column {
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.timer-time-info {
+    float: left;
+}
+
+.buttons {
+    float: right;
+}
+
+
+.buttons div {
+    display: inline-block;
+    width: 95px;
+    color: white;
+}
+
+.buttons div:first-child {
+    border-radius: 50px 5px 0px 50px;
+}
+
+.buttons div:first-child:hover {
+    background: linear-gradient(#468CC8, #64A0C8);
+}
+
+.buttons div:first-child:active {
+    background: linear-gradient(#64A0C8, #468CC8);
+}
+
+.buttons div:last-child {
+    border-radius: 0px 50px 50px 0px;
+}
+
+.buttons div:last-child:hover {
+    background: linear-gradient(#DC7878, #DC3C3C);
+}
+
+.buttons div:last-child:active {
+    background: linear-gradient(#DC3C3C, #DC7878);
+}
+
+.buttons div:nth-child(2):hover {
+    background: linear-gradient(#50B4C8, #78DCDC);
+}
+
+.buttons div:nth-child(2):active {
+    background: linear-gradient(#78DCDC, #50B4C8);
+}
+
+
+
+
+.timer-start {
+    background-color: #468CC8;
+}
+
+.timer-lap {
+    background-color: #64C8DC;
+}
+
+.timer-reset {
+    background-color: #DC5850;
+}
+
+.buttons:hover {
+    cursor: pointer;
+}
+
+.timer-stopwatch-laps {
+    font-size: 20px;
+    text-align: left;
+}
+
+.timer-stopwatch-laps-alert {
+    position: relative;
+    padding: 15px;
+    margin: 15px;
+    background-color: #DCF0FA;
+    border-radius: 10px;
+}
+
+.timer-stopwatch-laps-cancel {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #DC5850;
+    top: 5px;
+    right: 10px;
+    border-radius: 10px;
+}
+
+.timer-stopwatch-laps-cancel:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

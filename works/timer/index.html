@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>18.1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/timer.css">
+    <script src="js/timer.js"></script>
+</head>
+
+<body>
+    <div class="test-first"></div>
+    <div class="test-second"></div>
+    <script>
+    (function() {
+        'use strict';
+        var testFirst = document.querySelector('.test-first');
+        var test = new CreateTimer(testFirst);
+
+        var testSecond = document.querySelector('.test-second');
+        var testtest = new CreateTimer(testSecond);
+    })();
+    </script>
+</body>
+
+</html>

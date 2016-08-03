@@ -1,0 +1,37 @@
+.gallery-1 img, .gallery-2 img:hover {
+	cursor: pointer;
+}
+
+.blocker {
+	position: absolute;
+	background-color: rgba(192,192,192, 0.5);
+	top: 0,
+	left: 0
+}
+
+.cancel-button {
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    background-color: #DC5850;
+    top: 5px;
+    right: 10px;
+    border-radius: 10px;
+}
+
+.image-wrapper {
+	position: fixed;
+	width: 60%;
+	left: 20%;
+	outline: 1px solid red;
+}
+
+.cancel-button:hover {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none
+}
