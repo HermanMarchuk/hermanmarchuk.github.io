@@ -12,8 +12,15 @@
     top:45%;
     left:45%;
     transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    /*transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);*/
+    /*animation: rotate-demo 10s infinite linear;*/
+    animation: rotate-demo 10s infinite;
 }
+
+/*@keyframes rotate-demo {
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+  }*/
 
 .side {
     width: 100%;
