@@ -79,18 +79,34 @@
 
 	FormValidation.prototype.emailError = function() {
 		this.validateInput(this.emailInput, /[^@]+@[^@\.]+\.[^@]+/, false, 'Ошибка ввода email', 'has-email-error');
+		// var isNotValid = this.validateInput(this.emailInput, /[^@]+@[^@\.]+\.[^@]+/, false, 'Ошибка ввода email', 'has-email-error');
+		// if (!isNotValid) {
+		// 	this.emailUsed();
+		// }
 	};
 
 	FormValidation.prototype.emailUsed = function() {
-		var reg;
-		var match;
-		for (var i = 0; i < this.usedEmails.length; i += 1) {
-			reg = new RegExp(this.usedEmails[i] + '\s*', 'i');
-			match = this.validateInput(this.emailInput, reg, true, 'Данный email уже зарегестрирован', 'has-email-used-error');
-			if (match) {
-				break;
+		var RESPONSE_READY = 4;
+		var self = this;
+		var xhr = new XMLHttpRequest();
+		var url = 'https://aqueous-reaches-8130.herokuapp.com/check-email/?email=' + this.emailInput.value;
+		xhr.open('GET', url, true);
+		xhr.send();
+		xhr.onreadystatechange = function() {
+			var response = null;
+			var isUsed = null;
+			if (xhr.readyState !== 4) {
+				return;
 			}
-		}
+			response = JSON.parse(xhr.responseText);
+			isUsed = response.used;
+			if (isUsed) {
+				self.showErrorMessage(self.emailInput, 'Данный email уже зарегестрирован', 'has-email-used-error');
+			} else {
+				self.hideErrorMessage(self.emailInput, 'has-email-used-error');
+			}
+			console.log(isUsed);
+		};
 	};
 
 	FormValidation.prototype.passwordShort = function() {
